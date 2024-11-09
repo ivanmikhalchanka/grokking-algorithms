@@ -7,7 +7,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-public class TwoPointers {
+public class TwoPointersPalindrome {
 
   public static final int MAX_INPUT_LENGTH = 2 * (int) Math.pow(10, 5);
 
