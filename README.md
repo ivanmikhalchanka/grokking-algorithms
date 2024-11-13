@@ -16,7 +16,10 @@ adjust based on some condition or criteria.
 #### Arrays:
 
 <details>
+
 <summary>1. Reversing an array</summary>
+
+##### Algorithm:
 
 1. Starting from the first and last element
 2. Flip elements and move pointers
@@ -26,8 +29,11 @@ adjust based on some condition or criteria.
 <details>
 <summary>2. Pair with a given sum in the sorted array</summary>
 
-Code
-example: [pair with a given sum in a sorted array](src/test/java/arrays/TwoPointersPairSum.java).
+##### Code example:
+
+[pair with a given sum in a sorted array](src/test/java/arrays/TwoPointersPairSum.java).
+
+##### Algorithm:
 
 1. Starting from the first and last element
 2. Compare sum of current elements:
@@ -41,8 +47,10 @@ example: [pair with a given sum in a sorted array](src/test/java/arrays/TwoPoint
 <details>
 <summary>3. Triplet with a given sum</summary>
 
-Code example: [triplet with a given sum](src/test/java/arrays/TwoPointersTripletSum.java)
+##### Code example:
+[triplet with a given sum](src/test/java/arrays/TwoPointersTripletSum.java)
 
+##### Algorithm:
 1. Sort an array in ascending order
 2. Iterating through all elements from the start to the `length - 2`
 3. On each iteration:
@@ -70,13 +78,13 @@ Expected output: `[0 0 0 1 1 1 2]`
 Code example: [sort colors](src/test/java/arrays/TwoPointersSortColors.java)
 
 1. Initialise 3 pointers:
-   - `left`: start of the array, responsible for `0`
-   - `current`: start of the array, responsible for `1`
-   - `right`: end of the array, responsible for `1`
+    - `left`: start of the array, responsible for `0`
+    - `current`: start of the array, responsible for `1`
+    - `right`: end of the array, responsible for `1`
 2. On each step check `current` element:
-   - if it is `1` - increment `current` index
-   - if it is `0` - swap `current` and `left` and increment **both `current` and `left`**
-   - if it is `2` - swap `current` and `right` and decrement **only** `right`
+    - if it is `1` - increment `current` index
+    - if it is `0` - swap `current` and `left` and increment **both `current` and `left`**
+    - if it is `2` - swap `current` and `right` and decrement **only** `right`
 3. Do this until `current` will reach `right`
 
 ![TP-sort-colors.png](diagrams/TP-sort-colors.png)
