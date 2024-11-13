@@ -19,7 +19,7 @@ adjust based on some condition or criteria.
 
 <summary>1. Reversing an array</summary>
 
-##### Algorithm:
+#### Algorithm:
 
 1. Starting from the first and last element
 2. Flip elements and move pointers
@@ -29,11 +29,11 @@ adjust based on some condition or criteria.
 <details>
 <summary>2. Pair with a given sum in the sorted array</summary>
 
-##### Code example:
+#### Code example:
 
 [pair with a given sum in a sorted array](src/test/java/arrays/TwoPointersPairSum.java).
 
-##### Algorithm:
+#### Algorithm:
 
 1. Starting from the first and last element
 2. Compare sum of current elements:
@@ -47,10 +47,12 @@ adjust based on some condition or criteria.
 <details>
 <summary>3. Triplet with a given sum</summary>
 
-##### Code example:
+#### Code example:
+
 [triplet with a given sum](src/test/java/arrays/TwoPointersTripletSum.java)
 
-##### Algorithm:
+#### Algorithm:
+
 1. Sort an array in ascending order
 2. Iterating through all elements from the start to the `length - 2`
 3. On each iteration:
@@ -64,7 +66,7 @@ adjust based on some condition or criteria.
 <details>
 <summary>4. Given an array with 3 colors group them by color</summary>
 
-### Example:
+#### Example:
 
 Colors:
 
@@ -75,7 +77,11 @@ Colors:
 Input: `[0 1 0 2 1 0 1]`
 Expected output: `[0 0 0 1 1 1 2]`
 
-Code example: [sort colors](src/test/java/arrays/TwoPointersSortColors.java)
+#### Code example:
+
+[sort colors](src/test/java/arrays/TwoPointersSortColors.java)
+
+#### Algorithm:
 
 1. Initialise 3 pointers:
     - `left`: start of the array, responsible for `0`
@@ -96,7 +102,11 @@ Code example: [sort colors](src/test/java/arrays/TwoPointersSortColors.java)
 <details>
 <summary>1. Detecting a valid palindrome</summary>
 
-Code example: [detecting a palindrome](src/test/java/strings/TwoPointersPalindrome.java).
+#### Code example:
+
+[detecting a palindrome](src/test/java/strings/TwoPointersPalindrome.java).
+
+#### Algorithm:
 
 1. starting from start and end
 2. on each steps checking if letters match
@@ -109,8 +119,11 @@ Code example: [detecting a palindrome](src/test/java/strings/TwoPointersPalindro
 <details>
 <summary>1. Remove N-th node from the end of the linked list</summary>
 
-Code
-example: [remove n-th node from the end of linked list](src/test/java/linkedlist/TwoPointersRemoveNthsNode.java)
+#### Code example:
+
+[remove n-th node from the end of linked list](src/test/java/linkedlist/TwoPointersRemoveNthsNode.java)
+
+#### Algorithm:
 
 1. Init 2 pointers at the beginning of the list: left and right
 2. Move right pointer to `n` positions
