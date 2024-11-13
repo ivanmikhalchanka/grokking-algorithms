@@ -15,12 +15,16 @@ adjust based on some condition or criteria.
 
 #### Arrays:
 
-##### 1. Reversing an array
+<details>
+<summary>1. Reversing an array</summary>
 
 1. Starting from the first and last element
 2. Flip elements and move pointers
 
-##### 2. Pair with a given sum in the sorted array
+</details>
+
+<details>
+<summary>2. Pair with a given sum in the sorted array</summary>
 
 Code
 example: [pair with a given sum in a sorted array](src/test/java/arrays/TwoPointersPairSum.java).
@@ -32,7 +36,10 @@ example: [pair with a given sum in a sorted array](src/test/java/arrays/TwoPoint
 
 ![TwoPointers - sum of tuple.drawio.png](diagrams%2FTwoPointers%20-%20sum%20of%20tuple.drawio.png)
 
-##### 3. Triplet with a given sum
+</details>
+
+<details>
+<summary>3. Triplet with a given sum</summary>
 
 Code example: [triplet with a given sum](src/test/java/arrays/TwoPointersTripletSum.java)
 
@@ -44,15 +51,67 @@ Code example: [triplet with a given sum](src/test/java/arrays/TwoPointersTriplet
 
 ![TwoPointers - sum of triple.drawio.png](diagrams/TwoPointers%20-%20sum%20of%20triple.drawio.png)
 
+</details>
+
+<details>
+<summary>4. Given an array with 3 colors group them by color</summary>
+
+### Example:
+
+Colors:
+
+- red - 0
+- green - 1
+- blue - 2
+
+Input: `[0 1 0 2 1 0 1]`
+Expected output: `[0 0 0 1 1 1 2]`
+
+Code example: [sort colors](src/test/java/arrays/TwoPointersSortColors.java)
+
+1. Initialise 3 pointers:
+   - `left`: start of the array, responsible for `0`
+   - `current`: start of the array, responsible for `1`
+   - `right`: end of the array, responsible for `1`
+2. On each step check `current` element:
+   - if it is `1` - increment `current` index
+   - if it is `0` - swap `current` and `left` and increment **both `current` and `left`**
+   - if it is `2` - swap `current` and `right` and decrement **only** `right`
+3. Do this until `current` will reach `right`
+
+![TP-sort-colors.png](diagrams/TP-sort-colors.png)
+
+</details>
+
 #### Strings:
 
-##### 1. Detecting a valid palindrome
+<details>
+<summary>1. Detecting a valid palindrome</summary>
 
 Code example: [detecting a palindrome](src/test/java/strings/TwoPointersPalindrome.java).
 
 1. starting from start and end
 2. on each steps checking if letters match
 3. if pointers reached same index - then string is a palindrome
+
+</details>
+
+#### Linked lists
+
+<details>
+<summary>1. Remove N-th node from the end of the linked list</summary>
+
+Code
+example: [remove n-th node from the end of linked list](src/test/java/linkedlist/TwoPointersRemoveNthsNode.java)
+
+1. Init 2 pointers at the beginning of the list: left and right
+2. Move right pointer to `n` positions
+3. Move both pointers to till right hits the end of the list
+4. Relink `next` element of the left pointer
+
+![TP-remove-nth-node.drawio.png](diagrams/TP-remove-nth-node.drawio.png)
+
+</details>
 
 ## References:
 
