@@ -19,15 +19,20 @@ adjust based on some condition or criteria.
 
 <summary>1. Reversing an array</summary>
 
+---
+
 #### Algorithm:
 
 1. Starting from the first and last element
 2. Flip elements and move pointers
 
+---
 </details>
 
 <details>
 <summary>2. Pair with a given sum in the sorted array</summary>
+
+---
 
 #### Code example:
 
@@ -42,10 +47,13 @@ adjust based on some condition or criteria.
 
 ![TwoPointers - sum of tuple.drawio.png](diagrams%2FTwoPointers%20-%20sum%20of%20tuple.drawio.png)
 
+---
 </details>
 
 <details>
 <summary>3. Triplet with a given sum</summary>
+
+---
 
 #### Code example:
 
@@ -61,10 +69,13 @@ adjust based on some condition or criteria.
 
 ![TwoPointers - sum of triple.drawio.png](diagrams/TwoPointers%20-%20sum%20of%20triple.drawio.png)
 
+---
 </details>
 
 <details>
 <summary>4. Given an array with 3 colors group them by color</summary>
+
+---
 
 #### Example:
 
@@ -95,12 +106,15 @@ Expected output: `[0 0 0 1 1 1 2]`
 
 ![TP-sort-colors.png](diagrams/TP-sort-colors.png)
 
+---
 </details>
 
 #### Strings:
 
 <details>
 <summary>1. Detecting a valid palindrome</summary>
+
+---
 
 #### Code example:
 
@@ -112,12 +126,15 @@ Expected output: `[0 0 0 1 1 1 2]`
 2. on each steps checking if letters match
 3. if pointers reached same index - then string is a palindrome
 
+---
 </details>
 
 #### Linked lists
 
 <details>
 <summary>1. Remove N-th node from the end of the linked list</summary>
+
+---
 
 #### Code example:
 
@@ -132,6 +149,7 @@ Expected output: `[0 0 0 1 1 1 2]`
 
 ![TP-remove-nth-node.drawio.png](diagrams/TP-remove-nth-node.drawio.png)
 
+---
 </details>
 
 ## References:
