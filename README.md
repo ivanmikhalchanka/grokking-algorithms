@@ -130,6 +130,73 @@ Output: `[0 0 0 1 1 1 2]`
 ---
 </details>
 
+<details>
+<summary>2. Reverse words in the string</summary>
+
+---
+
+#### Example:
+
+- Given: `Red Big Elf Hat`
+- Expected result: `Hat Elf Big Red`
+
+#### Code example: 
+[reverse words](src/test/java/strings/TwoPointersReverseWords.java)
+
+#### Algorithm:
+
+1. Reverse a string using two pointers:
+    1. initialise `start` pointer at the start of the string
+    2. initialise `end` pointer at the end of the string
+    3. swap symbols for `start` and `end` pointers
+    4. increment `start` pointer and decrement `end` pointer
+2. On the reverses string initialise two pointers both on the start of the string
+3. Move `end` pointer until next symbol is space or end of the string
+4. Reverse word between `start` and `end` pointers
+5. Move both start and end pointers to the index of found space
+
+![TP-reverse-words.drawio.png](diagrams/TP-reverse-words.drawio.png)
+
+---
+</details>
+
+<details>
+<summary>3. Valid abbreviation</summary>
+
+---
+
+Valid examples:
+
+- kubernetes -> k8s
+- internationalisation -> i18n
+
+Invalid examples:
+
+- car -> c2t
+- car -> c0ar
+- hat -> 2d
+
+#### Code example:
+
+[Valid palindrome](src/test/java/strings/TwoPointerValidAbbreviation.java)
+
+#### Algorithm:
+1. Initialise 2 pointers: first for word and second for abbreviation
+2. For each letter of abbreviation:
+   - if it is a digit:
+     - if it 0 - return false
+     - if not 0 - parse number moving abbreviation pointer and increment word pointer on this number
+   - if not a digit:
+     - if word pointer is out of word length - return false
+     - if word letter does not match abbreviation letter - return false
+     - if letters match - increment both pointers
+3. If abbreviation fully checked and there are no additional letters in word - return true
+
+![TP-valid-abbreviation.drawio.png](diagrams/TP-valid-abbreviation.drawio.png)
+
+---
+</details>
+
 #### Linked lists
 
 <details>
