@@ -36,7 +36,7 @@ adjust based on some condition or criteria.
 
 #### Code example:
 
-[pair with a given sum in a sorted array](src/test/java/arrays/TwoPointersPairSum.java).
+[pair with a given sum in a sorted array](src/test/java/arrays/twopointers/TwoPointersPairSum.java).
 
 #### Algorithm:
 
@@ -57,7 +57,7 @@ adjust based on some condition or criteria.
 
 #### Code example:
 
-[triplet with a given sum](src/test/java/arrays/TwoPointersTripletSum.java)
+[triplet with a given sum](src/test/java/arrays/twopointers/TwoPointersTripletSum.java)
 
 #### Algorithm:
 
@@ -91,7 +91,7 @@ Output: `[0 0 0 1 1 1 2]`
 
 #### Code example:
 
-[sort colors](src/test/java/arrays/TwoPointersSortColors.java)
+[sort colors](src/test/java/arrays/twopointers/TwoPointersSortColors.java)
 
 #### Algorithm:
 
@@ -119,7 +119,7 @@ Output: `[0 0 0 1 1 1 2]`
 
 #### Code example:
 
-[detecting a palindrome](src/test/java/strings/TwoPointersPalindrome.java).
+[detecting a palindrome](src/test/java/strings/twopointers/TwoPointersPalindrome.java).
 
 #### Algorithm:
 
@@ -141,7 +141,7 @@ Output: `[0 0 0 1 1 1 2]`
 - Expected result: `Hat Elf Big Red`
 
 #### Code example: 
-[reverse words](src/test/java/strings/TwoPointersReverseWords.java)
+[reverse words](src/test/java/strings/twopointers/TwoPointersReverseWords.java)
 
 #### Algorithm:
 
@@ -178,7 +178,7 @@ Invalid examples:
 
 #### Code example:
 
-[Valid palindrome](src/test/java/strings/TwoPointerValidAbbreviation.java)
+[Valid palindrome](src/test/java/strings/twopointers/TwoPointerValidAbbreviation.java)
 
 #### Algorithm:
 1. Initialise 2 pointers: first for word and second for abbreviation

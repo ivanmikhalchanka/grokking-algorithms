@@ -1,4 +1,4 @@
-package arrays;
+package arrays.twopointers;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 

@@ -1,4 +1,4 @@
-package strings;
+package strings.twopointers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
