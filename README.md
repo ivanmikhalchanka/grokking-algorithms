@@ -140,7 +140,8 @@ Output: `[0 0 0 1 1 1 2]`
 - Given: `Red Big Elf Hat`
 - Expected result: `Hat Elf Big Red`
 
-#### Code example: 
+#### Code example:
+
 [reverse words](src/test/java/strings/twopointers/TwoPointersReverseWords.java)
 
 #### Algorithm:
@@ -181,18 +182,51 @@ Invalid examples:
 [Valid palindrome](src/test/java/strings/twopointers/TwoPointerValidAbbreviation.java)
 
 #### Algorithm:
+
 1. Initialise 2 pointers: first for word and second for abbreviation
 2. For each letter of abbreviation:
-   - if it is a digit:
-     - if it 0 - return false
-     - if not 0 - parse number moving abbreviation pointer and increment word pointer on this number
-   - if not a digit:
-     - if word pointer is out of word length - return false
-     - if word letter does not match abbreviation letter - return false
-     - if letters match - increment both pointers
+    - if it is a digit:
+        - if it 0 - return false
+        - if not 0 - parse number moving abbreviation pointer and increment word pointer on this
+          number
+    - if not a digit:
+        - if word pointer is out of word length - return false
+        - if word letter does not match abbreviation letter - return false
+        - if letters match - increment both pointers
 3. If abbreviation fully checked and there are no additional letters in word - return true
 
 ![TP-valid-abbreviation.drawio.png](diagrams/TP-valid-abbreviation.drawio.png)
+
+---
+</details>
+
+<details>
+<summary>4. Strobogrammatic number</summary>
+
+---
+
+[Strobogrammatic number](https://en.wikipedia.org/wiki/Strobogrammatic_number) - is a number, that
+reads the same rotated 180 degrees.
+
+Valid examples:
+
+- 101
+- 609
+  Invalid examples:
+- 1010
+- 828
+
+#### Code example:
+
+[Strobogrammatic number](src/test/java/strings/twopointers/TwoPointersStrobogrammaticNumber.java)
+
+#### Algorithm:
+
+1. Initialise 2 pointers: first at the beginning of the number and second at the end
+2. For the beginning digit find corresponding strobogrammatic digit
+3. If strobogrammatic digit not match digit at the end - return false
+4. Otherwise increment start pointer and decrement end pointer
+5. If pointers met - number is strobogrammatic
 
 ---
 </details>
