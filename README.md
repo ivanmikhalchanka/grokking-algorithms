@@ -105,7 +105,7 @@ Output: `[0 0 0 1 1 1 2]`
     - if it is `2` - swap `current` and `right` and decrement **only** `right`
 3. Do this until `current` will reach `right`
 
-![TP-sort-colors.png](diagrams/TP-sort-colors.png)
+![TP-sort-colors.png](diagrams/arrays/TP-sort-colors.png)
 
 ---
 </details>
@@ -156,7 +156,7 @@ Output: `[0 0 0 1 1 1 2]`
 4. Reverse word between `start` and `end` pointers
 5. Move both start and end pointers to the index of found space
 
-![TP-reverse-words.drawio.png](diagrams/TP-reverse-words.drawio.png)
+![TP-reverse-words.drawio.png](diagrams/strings/TP-reverse-words.drawio.png)
 
 ---
 </details>
@@ -195,7 +195,7 @@ Invalid examples:
         - if letters match - increment both pointers
 3. If abbreviation fully checked and there are no additional letters in word - return true
 
-![TP-valid-abbreviation.drawio.png](diagrams/TP-valid-abbreviation.drawio.png)
+![TP-valid-abbreviation.drawio.png](diagrams/strings/TP-valid-abbreviation.drawio.png)
 
 ---
 </details>
@@ -256,7 +256,7 @@ Example: `aabb -> abab -> abba`
     - if not found for the second time - it is not possible to make a palindrome
 3. Continue till pointer meet
 
-![TP-num-of-moves-for-palindrome.drawio.png](diagrams/TP-num-of-moves-for-palindrome.drawio.png)
+![TP-num-of-moves-for-palindrome.drawio.png](diagrams/strings/TP-num-of-moves-for-palindrome.drawio.png)
 
 ---
 </details>
@@ -287,7 +287,7 @@ Example:
 7. reverse all the digits to the right of the swapped position
 8. mirror left half and add middle digit if required to return the answer
 
-![TP-next-greater-palindrome.drawio.png](diagrams/TP-next-greater-palindrome.drawio.png)
+![TP-next-greater-palindrome.drawio.png](diagrams/strings/TP-next-greater-palindrome.drawio.png)
 
 ---
 </details>
@@ -310,7 +310,35 @@ Example:
 3. Move both pointers to till right hits the end of the list
 4. Relink `next` element of the left pointer
 
-![TP-remove-nth-node.drawio.png](diagrams/TP-remove-nth-node.drawio.png)
+![TP-remove-nth-node.drawio.png](diagrams/linkedlist/TP-remove-nth-node.drawio.png)
+
+---
+</details>
+
+#### Trees
+
+<details>
+<summary>1. Find lowest common ancestor</summary>
+
+---
+
+#### Example:
+
+Given 2 nodes of the tree find lowest common ancestor:
+![TP-lowest-common-ancestor-example.drawio.png](diagrams/tree/TP-lowest-common-ancestor-example.drawio.png)
+
+#### Code example:
+
+[Lowest common ancestor](src/test/java/tree/LowestCommonAncestor.java)
+
+#### Algorithm:
+
+1. Initialise two pointers: one on the first and another on second
+2. Move both pointers one step up
+3. If pointers meet - return the node
+4. If pointer reached root - move it to the starting position of the other node
+
+![TP-lowest-common-ancestor.drawio.png](diagrams/tree/TP-lowest-common-ancestor.drawio.png)
 
 ---
 </details>
