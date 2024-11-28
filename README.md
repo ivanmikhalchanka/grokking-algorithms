@@ -231,6 +231,64 @@ Valid examples:
 ---
 </details>
 
+<details>
+<summary>5. Number of moves to make a palindrome</summary>
+
+---
+
+Example: `aabb -> abab -> abba`
+
+#### Code example:
+
+[Number of moves to make a palindrome](src/test/java/strings/twopointers/TwoPointersNumOfMovesToMakePalindrome.java)
+
+#### Algorithm:
+1. Initialise 2 pointers: `left` at start and at `right` the end of the string
+2. If `left` and `right` letters are not the same:
+   - Move `right` pointer till it bigger the `left` and letter is not equal to `left` letter
+   - if found: 
+     - move `right` pointer back swapping letters and incrementing number of moves
+     - increment `left` pointer and decrement `right` pointer
+   - if not found for the first time:
+     - move `left` pointer to the middle swapping letters, so `left` letter is in the middle
+     - set `left` and `right` pointer back to their positions
+   - if not found for the second time - it is not possible to make a palindrome 
+3. Continue till pointer meet
+
+![TP-num-of-moves-for-palindrome.drawio.png](diagrams/TP-num-of-moves-for-palindrome.drawio.png)
+
+---
+</details>
+
+<details>
+<summary>6. Find next greater palindrome number</summary>
+
+---
+
+Example:
+- 1221 - 2112
+- 14322341 - 21344312
+- 131 - null
+
+#### Code example:
+
+[Find next greater palindrome number.java](src/test/java/strings/twopointers/TwoPointersNextGreaterPalindrome.java)
+
+#### Algorithm:
+1. Split palindrome into 2 halves, in case of odd number of letters - store middle one separately
+2. start iterating from the end of the left half
+3. find **digit to replace**: the one, that is less than next one, e.g.: `[3]4`, `[1]3`, etc.
+4. restart iteration from the end of the left half
+5. find **replacement digit**: the one, that is bigger than **digit to replace**
+6. swap **digit to replace** with **replacement digit**
+7. reverse all the digits to the right of the swapped position
+8. mirror left half and add middle digit if required to return the answer
+
+![TP-next-greater-palindrome.drawio.png](diagrams/TP-next-greater-palindrome.drawio.png)
+
+---
+</details>
+
 #### Linked lists
 
 <details>
