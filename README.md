@@ -325,6 +325,7 @@ Example:
 #### Example:
 
 Given 2 nodes of the tree find lowest common ancestor:
+
 ![TP-lowest-common-ancestor-example.drawio.png](diagrams/tree/TP-lowest-common-ancestor-example.drawio.png)
 
 #### Code example:
