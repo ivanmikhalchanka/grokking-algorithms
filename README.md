@@ -110,7 +110,7 @@ Output: `[0 0 0 1 1 1 2]`
 ---
 </details>
 
-#### Strings:
+#### Strings and Numbers:
 
 <details>
 <summary>1. Detecting a valid palindrome</summary>
