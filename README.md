@@ -292,6 +292,36 @@ Example:
 ---
 </details>
 
+<details>
+<summary>7. Check if palindrome is valid after removing only one letter</summary>
+
+---
+
+#### Example:
+
+- `abbac` - valid
+- `cabba` - valid
+- `abbcac` - not valid
+
+#### Code example:
+
+[Check if palindrome is valid after removing only one letter](src/test/java/strings/twopointers/TwoPointersValidPalindromeRemovingSingleLetter.java)
+
+#### Algorithm:
+
+1. initialise 2 pointers: `left` at the start of the string and `right` at the end
+2. move pointers until letters are match or pointers are meet
+3. once letters not match:
+    1. increment mismatch counter, if it is more than 1 - return `false`
+    2. check letter at the `right - 1` position, if it matches `left` letter - continue
+    3. check letter at the `left + 1` position, if it matches `right` letter - continue
+    4. if both `right - 1` and `left + 1` are mismatches - return `false`
+
+![TP-valid-palindrome-removing-single-letter.drawio.png](diagrams/strings/TP-valid-palindrome-removing-single-letter.drawio.png)
+
+---
+</details>
+
 #### Linked lists
 
 <details>
