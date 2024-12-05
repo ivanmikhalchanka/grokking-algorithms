@@ -45,7 +45,7 @@ adjust based on some condition or criteria.
     - if sum more than expected - decrement right pointer index
     - if sum less than expected - increment left pointer index
 
-![TwoPointers - sum of tuple.drawio.png](diagrams%2FTwoPointers%20-%20sum%20of%20tuple.drawio.png)
+![TP-sum-of-tuple.drawio.png](diagrams/arrays/TP-sum-of-tuple.drawio.png)
 
 ---
 </details>
@@ -67,7 +67,7 @@ adjust based on some condition or criteria.
     1. initialise 2 pointers: start as `i + 1` and end as `lenght - 1`
     2. calculate sum of 3 elements: start, end and current
 
-![TwoPointers - sum of triple.drawio.png](diagrams/TwoPointers%20-%20sum%20of%20triple.drawio.png)
+![TP-sum-of-triple.drawio.png](diagrams/arrays/TP-sum-of-triple.drawio.png)
 
 ---
 </details>
