@@ -428,6 +428,30 @@ Not happy number:
 ---
 </details>
 
+#### Linked list
+
+<details>
+<summary>1. Detect cycle in the linked list</summary>
+
+---
+
+#### Code example:
+
+[Detect cycle in the linked list](src/test/java/linkedlist/fastslowpointers/DetectCycleInLinkedList.java)
+
+#### Algorithm:
+
+1. Initialise 2 pointers: at fist and at next elements
+2. Until fast reaches null or slow equal to the fast:
+    - move slow pointer one step forward
+    - move fast pointer two steps forward
+3. If fast pointer is null - return false
+
+![FSP-linked-list-cycle.drawio.png](diagrams/linkedlist/FSP-linked-list-cycle.drawio.png)
+
+---
+</details>
+
 ## References:
 
 - [Manning: Grokking algorithms](https://www.manning.com/books/grokking-algorithms)
