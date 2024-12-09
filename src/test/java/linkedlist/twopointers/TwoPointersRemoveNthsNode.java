@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.twopointers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

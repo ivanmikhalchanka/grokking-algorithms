@@ -331,7 +331,7 @@ Example:
 
 #### Code example:
 
-[remove n-th node from the end of linked list](src/test/java/linkedlist/TwoPointersRemoveNthsNode.java)
+[TwoPointersRemoveNthsNode.java](src/test/java/linkedlist/twopointers/TwoPointersRemoveNthsNode.java)
 
 #### Algorithm:
 
