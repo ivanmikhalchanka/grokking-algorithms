@@ -376,6 +376,20 @@ Given 2 nodes of the tree find lowest common ancestor:
 
 ### Fast and Slow pointers
 
+This pattern is applicable for iterable data structures, such as linked lists or arrays. It is based
+on two pointers, but the second pointer moves faster than the first one.
+
+Often this pattern is used to
+
+- identify patterns
+- detect cycles
+- find specific elements
+
+Examples of tasks:
+
+- detect a cycle in linked list
+- find a middle of the linked list
+
 #### Numbers
 
 <details>
