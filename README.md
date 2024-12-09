@@ -374,6 +374,46 @@ Given 2 nodes of the tree find lowest common ancestor:
 ---
 </details>
 
+### Fast and Slow pointers
+
+#### Numbers
+
+<details>
+<summary>1. Check if number is happy</summary>
+
+---
+
+#### Description
+
+Number is happy when repeatedly summing squares of it's numbers results in 1 and not happy if there
+is a cycle.
+
+Happy number
+
+- [23] -> `2^2 + 3^2=[13]` -> `1^2 + 3^2 = [10]` -> `1^2 + 0^2 = [1]` - true
+
+Not happy number:
+
+- 2 -> [4] -> 16 -> 37 -> 58 -> 89 -> 145 -> 42 -> 20 -> [4]
+
+#### Code example:
+
+[Is happy number](src/test/java/numbers/fastslowpointers/IsHappyNumber.java)
+
+#### Algorithm:
+
+1. Initialise slow pointer as number
+2. Initialise fast pointer as number after initial one
+3. Until fast pointer is eq to 1 or fast and slow pointers are equal:
+    - replace slow pointer with sum of its squares
+    - replace fast pointer summing its squares two times
+4. If fast pointer is 1 - number is happy
+
+![FSP-happy-number.drawio.png](diagrams/numbers/FSP-happy-number.drawio.png)
+
+---
+</details>
+
 ## References:
 
 - [Manning: Grokking algorithms](https://www.manning.com/books/grokking-algorithms)
