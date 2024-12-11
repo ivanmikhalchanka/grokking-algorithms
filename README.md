@@ -452,6 +452,28 @@ Not happy number:
 ---
 </details>
 
+<details>
+<summary>2. Find middle of the linked list</summary>
+
+---
+
+#### Code example:
+
+[FindMiddleOfLinkedList.java](src/test/java/linkedlist/fastslowpointers/FindMiddleOfLinkedList.java)
+
+#### Algorithm:
+
+1. Init slow and fast pointer at the head of linked list
+2. While fast and fast.next are not null:
+    - move slow pointer 1 step forward
+    - move fast pointer 1 step forward, null check, 1 step forward
+3. Slow pointer will be referencing middle of the list - return it
+
+![FSP-linked-list-middle.drawio.png](diagrams/linkedlist/FSP-linked-list-middle.drawio.png)
+
+---
+</details>
+
 ## References:
 
 - [Manning: Grokking algorithms](https://www.manning.com/books/grokking-algorithms)
