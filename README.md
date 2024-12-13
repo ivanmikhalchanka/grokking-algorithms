@@ -474,6 +474,79 @@ Not happy number:
 ---
 </details>
 
+#### Arrays
+
+<details>
+<summary>1. Circular array loop</summary>
+
+---
+
+#### Description:
+
+There is an array, where each element represents a number of steps to be taken either forward or
+backward after reaching it to get to the next element. Positive elements indicates forward moves,
+negative - backward. When reaching either end of the array - traversal wraps to the opposite end.
+
+The input array can contain next cycle:
+
+- the sequence of moves starts and ends at the same element
+- the length of the sequence at least 2
+- the loop must be in a single direction: either forward or backward
+
+Loop not always starts at the first element.
+
+#### Examples:
+
+1. Example forward:
+    - Input: `[3, 1, 2]`
+    - Iterations:
+        - index: 0, steps: 3 -> index: 0, steps: 3 - not a cycle cause single element
+        - index: 1, steps: 1 -> index: 2, steps: 2 -> index: 1 - valid cycle
+2. Example backward:
+    - Input: `[-2, -1, -3]`
+    - Iterations:
+        - i: 0, steps: -2 -> i: 1, steps: -1 -> i: 0 -> valid cycle
+3. Example misdirection:
+    - Input: `[2, 1, -1, -2]`
+    - Iterations:
+        - i: 0, s: 2 -> i: 2, s: -1 - misdirection found, not a cycle
+        - i: 1, s: 1 -> i: 2, s: -1 - misdirection found, not a cycle
+        - i: 2, s: -1 -> i: 1, s: 1 - misdirection found, not a cycle
+        - i: 3, s: -2 -> i: 1, s: 1 - misdirection found, not a cycle
+
+#### Code example:
+
+[Detect circular array loop](src/test/java/arrays/fastslowpointers/DetectCircularArrayLoop.java)
+
+#### Algorithm:
+
+Base algorithm:
+
+- For each element of the array:
+    - init fast and slow pointers on the element
+    - store direction by the starting element: more that 0 - forward
+    - init misdirection flag
+    - init steps counter at 0
+    - until slow pointer is equal to the fast pointer or misdirection found:
+        - increment steps counter
+        - move slow pointer one step forward by iterating through an array
+            - check direction of slow pointer and update misdirection flag
+        - move fast pointer two steps forward
+            - check direction of fast pointer and update misdirection flag
+    - once fast and slow pointers met - check misdirection flag and steps counter and if valid cycle
+      detected - return true
+
+Next element of the sequence calculation algorithm:
+
+- append number of steps to the current index
+- calculate reminder of result number division to the array length
+- if number is negative - add array length, this happens when moving backwards
+
+![FSP-cycle-array-loops.drawio.png](diagrams/arrays/FSP-cycle-array-loops.drawio.png)
+
+---
+</details>
+
 ## References:
 
 - [Manning: Grokking algorithms](https://www.manning.com/books/grokking-algorithms)
