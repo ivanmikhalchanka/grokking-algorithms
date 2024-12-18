@@ -547,6 +547,55 @@ Next element of the sequence calculation algorithm:
 ---
 </details>
 
+<details>
+<summary>2. Find duplicate numbers in a linked list represented as array</summary>
+
+---
+
+#### Description:
+
+Given:
+
+- array of numbers
+- one number is duplicated
+- all numbers less than array length, i.e. `1 <= array[i] < array.length`
+
+Find:
+
+- duplicate number
+
+#### Examples:
+
+- `[1, 2, 3, 4, 1]` -> **1**
+- `[2, 3, 4, 4, 1]` -> **4**
+
+#### Code example:
+
+[Find duplicate numbers in a linked list represented as array](src/test/java/arrays/fastslowpointers/FindDuplicateNumbersInLinkedListRepresentedAsArray.java)
+
+#### Algorithm:
+
+Since all array elements are less than array length - array can be represented as a linked list with
+a loop, e.g.:
+
+```
+ 0  1  2  3  4
+[1, 2, 3, 4, 1] <=> [0] -> [1] -> [2]
+                            |      |
+                           [4] <- [3]
+```
+
+1. Traverse and array using **fast and slow pointers** till they meet to detect a loop
+2. Once loop detected - traverse an array using **two pointers** till they meet to detect duplicate
+   number:
+    - first pointer starts at the beginning of array
+    - second pointer starts at the **fast and slow pointers** intersection
+
+![FSP-duplicate-numbers-in-lined-list-array.drawio.png](diagrams/arrays/FSP-duplicate-numbers-in-lined-list-array.drawio.png)
+
+---
+</details>
+
 ## References:
 
 - [Manning: Grokking algorithms](https://www.manning.com/books/grokking-algorithms)
