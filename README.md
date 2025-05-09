@@ -345,6 +345,28 @@ Example:
 ---
 </details>
 
+<details>
+<summary>2. Reverse linked list</summary>
+
+---
+
+#### Code example:
+
+[TwoPointersReverseLinkedList.java](src/test/java/linkedlist/twopointers/TwoPointersReverseLinkedList.java)
+
+#### Algorithm:
+
+1. initialise 3 pointers: prev, next, current
+2. store next node: next = current.next
+3. link current node with previous one as next: current.next = prev
+4. store current node as next prev: prev = current
+5. move current one step forward: current = next
+
+![TP-reverse-linked-list.drawio.png](diagrams%2Flinkedlist%2FTP-reverse-linked-list.drawio.png)
+
+---
+</details>
+
 #### Trees
 
 <details>
