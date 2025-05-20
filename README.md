@@ -496,6 +496,27 @@ Not happy number:
 ---
 </details>
 
+<details>
+<summary>2. Check if linked list is a palindrome</summary>
+
+---
+
+#### Code example:
+
+[PalindromeLinkedList.java](src%2Ftest%2Fjava%2Flinkedlist%2Ffastslowpointers%2FPalindromeLinkedList.java)
+
+#### Algorithm:
+
+1. Find middle of the linked list using fast and slow pointer
+2. Reverse second half of the linked list
+3. Compare first and second halves
+4. Reverse second half back before returning the result
+
+![FSP-is-palindrome-linked-list.drawio.png](diagrams%2Flinkedlist%2FFSP-is-palindrome-linked-list.drawio.png)
+
+---
+</details>
+
 #### Arrays
 
 <details>
